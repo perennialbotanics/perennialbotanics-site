@@ -1,2 +1,21 @@
-Perennial Botanics
-Exploring the biology of life without end
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    html, body { height:100%; margin:0; }
+    body { overflow:hidden; background:#000; }
+    #world-root { position:fixed; inset:0; width:100vw; height:100vh; overflow:hidden; }
+    #world-root svg { width:100%; height:100%; display:block; }
+  </style>
+</head>
+<body>
+
+  <div id="world-root"
+    data-desktop-svg="assets/world-desktop.svg"
+    data-phone-svg="assets/world-phone.svg"></div>
+
+  <script src="assets/world-engine.js"></script>
+</body>
+</html>
