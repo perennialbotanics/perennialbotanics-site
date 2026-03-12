@@ -195,6 +195,10 @@
     );
 
     root.addEventListener("pointerdown", (e) => {
+      // If clicking a navigation button, don't start drag
+      const btn = e.target.closest("[id^='btn-']");
+      if (btn) return;
+
       if (e.pointerType === "mouse" && e.button !== 0) return;
 
       state.pointers.set(e.pointerId, {
